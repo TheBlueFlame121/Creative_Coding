@@ -1,6 +1,7 @@
 #!/bin/bash
 
-./scripts/stop.sh
+SCRIPT_DIR="$(dirname "$(readlink -f "$0")")"
+$SCRIPT_DIR/stop.sh
 
 xhost +local:root
 
